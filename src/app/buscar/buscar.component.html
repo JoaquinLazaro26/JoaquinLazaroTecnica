@@ -1,0 +1,14 @@
+<div class="main-content">
+  <div>
+    <h3>Buscar</h3>
+    <input type="text" [(ngModel)]="searchTerm" class="search-input" (keyup.enter)="searchGifs()" placeholder="Buscar Gifs...">
+    <button (click)="searchGifs()" class="search-button">Buscar</button>
+  </div>
+  <div class="gifs-container">
+    <div *ngFor="let gif of gifs" class="gif-item">
+      <div class="gif-title">{{ gif.title }}</div>
+      <img [src]="gif.images.fixed_height.url" [alt]="gif.alt_text">
+    </div>
+  </div>
+</div>
+

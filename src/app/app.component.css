@@ -1,0 +1,11 @@
+.container {
+    padding: 20px;
+  }
+  
+  .sidebar {
+    background-color: #46494d; 
+    color: #ffff;
+    border-right: 1px solid #e2e6de; 
+    padding: 20px;
+  } 
+  
